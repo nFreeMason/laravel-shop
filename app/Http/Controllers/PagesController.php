@@ -9,8 +9,6 @@ class PagesController extends Controller
     //
     public function root()
     {
-        $test = '123';
-        dd(get_defined_vars());
         return view('pages.root');
     }
 

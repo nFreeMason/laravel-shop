@@ -12,4 +12,6 @@
 */
 
 Route::get('/', 'PagesController@root')->name('root');
-Route::get('/test',function (){dd(123);});
+Auth::routes();
+
+//Route::get('/home', 'HomeController@index')->name('home');

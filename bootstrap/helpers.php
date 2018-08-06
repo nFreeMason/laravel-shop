@@ -1,5 +1,8 @@
 <?php
 
-if ( function_exists('test') ) {
-
+if ( ! function_exists('route_class') ) {
+    function route_class()
+    {
+        return 'OK';
+    }
 }

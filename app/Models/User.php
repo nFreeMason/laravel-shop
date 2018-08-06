@@ -30,4 +30,6 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified' => 'boolean'
     ];
+
+
 }

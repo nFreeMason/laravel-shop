@@ -4,7 +4,7 @@ use Faker\Generator as Faker;
 use Faker\Factory as FakerFactory;
 
 $factory->define(App\Models\UserAddress::class, function (Faker $faker) {
-    $faker = FakerFactory::create(config('app.faker_locale', 'en_US'));
+    //$faker = FakerFactory::create(config('app.faker_locale', 'en_US'));
     $addresses = [
         ["北京市", "市辖区", "东城区"],
         ["河北省", "石家庄市", "长安区"],
@@ -13,7 +13,6 @@ $factory->define(App\Models\UserAddress::class, function (Faker $faker) {
         ["广东省", "深圳市", "福田区"],
     ];
     $address   = $faker->randomElement($addresses);
-
     return [
         'province'      => $address[0],
         'city'          => $address[1],
